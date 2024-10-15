@@ -7,16 +7,18 @@ A colheita de cana-de-açúcar é uma etapa crítica na produção de açúcar e
 
 Este projeto visa solucionar o problema do gerenciamento de perdas na colheita de cana-de-açúcar, fornecendo um sistema que permite o registro detalhado das perdas, incluindo a localização, a quantidade e o tipo de perda. O sistema também gera relatórios em formato JSON para facilitar a análise e a tomada de decisão.
 
-Problemas do Agronegócio Abordados pelo Código:
+##Problemas do Agronegócio Abordados pelo Código:
 
 Perdas Quantitativas: A cana-de-açúcar pode ser perdida no campo por diversos motivos, como falhas na colheitadeira, condições climáticas adversas, ou dificuldades no terreno. O código permite registrar a quantidade de cana perdida, auxiliando na quantificação do problema e na identificação de padrões.
 Perdas Qualitativas: A qualidade da cana-de-açúcar colhida também é afetada por perdas. A cana deixada no campo pode deteriorar, impactando a qualidade do açúcar e do etanol produzidos. O sistema permite registrar o tipo de perda, como "cana deixada no campo", "cana amassada" ou "cana queimada", o que auxilia na análise da qualidade da cana colhida.
 Localização das Perdas: A geolocalização das perdas é um fator importante para a análise espacial do problema. O código registra a localização das perdas, permitindo a identificação de áreas com maior índice de perdas e a investigação das causas. Essa informação é crucial para otimizar as operações de colheita e direcionar investimentos em maquinário ou treinamento.
 Rastreabilidade: O código registra o ID do talhão onde a perda ocorreu, permitindo a rastreabilidade das perdas e a análise do histórico de cada talhão. Essa informação é valiosa para a tomada de decisão em relação ao manejo do solo, escolha de variedades e práticas de colheita.
 
-## Funcionalidades
+##Descrição Detalhada do Código Python para Gestão de Perdas na Colheita de Cana-de-açúcar
 
-Funcionalidades:
+Este código Python se propõe a solucionar um problema crucial no agronegócio brasileiro: o gerenciamento de perdas na colheita de cana-de-açúcar.  A perda de cana durante a colheita impacta diretamente a produtividade e a rentabilidade do setor, tornando a gestão eficiente dessas perdas uma necessidade. O código utiliza conceitos de subalgoritmos, estruturas de dados, manipulação de arquivos e conexão com banco de dados para construir um sistema robusto de registro e análise de perdas.
+
+## Funcionalidades
 
 Conexão com o Banco de Dados Oracle:
 A função conectar_banco() estabelece a conexão com o banco de dados, garantindo a persistência e a organização dos dados. O uso de um banco de dados como o Oracle oferece escalabilidade e segurança para o sistema.
@@ -28,7 +30,7 @@ Exemplo de Uso:
 
 O código inclui um exemplo prático de como utilizar as funções para cadastrar um talhão e registrar uma perda. Isso facilita a compreensão do funcionamento do sistema e a sua aplicação em cenários reais.
 
-Relação com os Conteúdos Estudados:
+##Relação com os Conteúdos Estudados:
 
 Subalgoritmos: As funções conectar_banco(), cadastrar_talhao() e registrar_perda() demonstram o uso de subalgoritmos para modularizar o código e facilitar a sua reutilização e manutenção.
 Estruturas de Dados: O código utiliza tuplas para armazenar os dados de forma organizada antes de inseri-los no banco de dados.
